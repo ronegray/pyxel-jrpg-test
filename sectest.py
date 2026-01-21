@@ -18,3 +18,12 @@ match AWS_SECRET_KEY:
 def secs(a:int):
     return a
 
+import os
+
+def run_command():
+    # 外部（ユーザー）からの入力をそのままOSコマンドとして実行する
+    # これは非常に危険なコードとして、CodeQLが「High」のアラートを出します
+    user_input = input("Enter filename: ")
+    os.system("ls " + user_input) 
+
+run_command()
