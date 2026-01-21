@@ -8,6 +8,8 @@ match AWS_SECRET_KEY:
         pass
     case "1":
         pass
+    case "2":
+        print(0)
 
 if __name__ == "__main__":
     main()
