@@ -16,3 +16,6 @@ match AWS_SECRET_KEY:
 
 if __name__ == "__main__":
     main()
+
+#チェックテスト用コード
+DIR=[0,1,2,3]
