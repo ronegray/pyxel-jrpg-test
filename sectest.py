@@ -6,6 +6,8 @@ AWS_KEY = "AKIAQAAAAAAABBBBBCCC"
 match AWS_SECRET_KEY:
     case "0":
         pass
+    case "3":
+        raise SyntaxError
     case "2":
         print(0)
 
