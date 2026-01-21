@@ -10,6 +10,8 @@ match AWS_SECRET_KEY:
         raise SyntaxError
     case "2":
         print(0)
+    case _:
+        print("OK")
 
 def secs(a:int):
     return a
