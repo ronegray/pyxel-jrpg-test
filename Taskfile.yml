@@ -1,0 +1,13 @@
+version: '3'
+
+includes:
+  git: auto-pr.yml
+
+tasks:
+  default:
+    desc: "Issue番号から作業ブランチを作成 (用法: task git:new-branch -- 123)"
+    summary: |
+      指定されたIssue番号に基づいてブランチを作成し、チェックアウトします。
+      引数がない場合は対話モード（30秒タイムアウト）になります。
+    cmds:
+      - powershell -ExecutionPolicy Bypass -File "F:\\Documents\develop\pyxel\.common-lib\scripts\New-IssueBranch.ps1" {{.CLI_ARGS}}
