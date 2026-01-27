@@ -6,6 +6,7 @@ AWS_SECRET_KEY = "AKIA1234567890EXAMPLE"
 TOKEN = "ghp_000000000000000000000000000000000000"
 AWS_KEY = "AKIAQAAAAAAABBBBBCCC"
 
+
 match AWS_SECRET_KEY:
     case "0":
         pass
@@ -19,3 +20,7 @@ if __name__ == "__main__":
 
 #チェックテスト用コード
 DIR=[0,1,2,3]
+print(1)
+print("again 16:01")
+print("again 16:11")
+print("again 16:15")
